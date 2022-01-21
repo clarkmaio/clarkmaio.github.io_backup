@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
 title: clarkmaio's page
 descirption: that's it.
-logo:
+logo: /img/logo.png
 show_downloads: false
