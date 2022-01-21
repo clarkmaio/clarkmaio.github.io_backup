@@ -1,3 +1,5 @@
 # main
 
-[Link to test page](./pages/page_test.md)
+hi. this is a great website I've created to explore my projects...
+
+have fun
