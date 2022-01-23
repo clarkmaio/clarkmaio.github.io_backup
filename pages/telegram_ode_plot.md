@@ -14,5 +14,3 @@ This is simple: just open your telegram app and look for **OdePlot**, click on t
 At this point you will see this:
 
 ![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png)
-
-
