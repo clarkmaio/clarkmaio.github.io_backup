@@ -8,9 +8,13 @@ You can find the package (and some details about its usage) at my [github page](
 Ok but this is the boring part... let's focus on the bot itself.
 
 <br><br><br>
-## How to start a session with the bot?
+## how to start a session with the bot?
 This is simple: just open your telegram app and look for **OdePlot**, click on the first result and then **START** button.
 
 At this point you will see this:
 
 ![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png)
+<img src="https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png", width="50%">
+
+## ok but why it is not working?
+because I am lazy
