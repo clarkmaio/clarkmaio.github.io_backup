@@ -8,13 +8,40 @@ You can find the package (and some details about its usage) at my [github page](
 Ok but this is the boring part... let's focus on the bot itself.
 
 <br><br><br>
+
+
+
+
+
 ## how to start a session with the bot?
 This is simple: just open your telegram app and look for **OdePlot**, click on the first result and then **START** button.
 
 At this point you will see this:
 
 ![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png)
-<img src="https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png", width="50%">
+<img src="https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png", width="400">
+
+
+
+
+
+## how I am supposed to use it?
+very simple... you have just to write down an equation of a first order ode `y'=f(x,y)`.
+
+You will immediately receive the image of the plot of the solution.
+For example writing `y'=y`
+
+
+
+
+
+
 
 ## ok but why it is not working?
-because I am lazy
+because I am lazy.
+
+I should set a machine (maybe a raspberry) to constantly run the python code that generate the bot... but I am lazy.
+
+BUT of course you can try it running by your self the `OdePlotBot.py` script you will find in [this](https://github.com/clarkmaio/TelegramBot) repository.
+
+ciao
