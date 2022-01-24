@@ -19,29 +19,40 @@ This is simple: just open your telegram app and look for **OdePlot**, click on t
 At this point you will see this:
 
 ![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png)
-<img src="https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png", width="400">
 
 
 
-
+<br>
 
 ## how I am supposed to use it?
-very simple... you have just to write down an equation of a first order ode `y'=f(x,y)`.
+Very simple... you have just to write down an equation of a first order ode `y'=f(x,y)`.
 
 You will immediately receive the image of the plot of the solution.
-For example writing `y'=y`
+For example writing `y'=y` (see screenshots below).
+
+<br>
+
+## can I change settings?
+Of course! you can setup 2 values:
+    
+* **ODE initial condition**: you can set the value of the solution at `x=0` (it is necessary to get a unique solution) by using the command `/set_y0`
+* **x axis interval**: you can set the x axis interval that will be displayed in the plot by using the command `/set_x_interval`
+
+You can print a recap of all commands by using the command `/help`
 
 
+<br>
 
-
-
+![screen_2](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_2.png)
+![screen_3](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_3.png)
+![screen_4](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_4.png)
 
 
 ## ok but why it is not working?
-because I am lazy.
+Because I am lazy.
 
 I should set a machine (maybe a raspberry) to constantly run the python code that generate the bot... but I am lazy.
 
-BUT of course you can try it running by your self the `OdePlotBot.py` script you will find in [this](https://github.com/clarkmaio/TelegramBot) repository.
+BUT of course you can try it running by your self the `OdePlotBot.py` script you will find in **[this](https://github.com/clarkmaio/TelegramBot)** repository.
 
 ciao
