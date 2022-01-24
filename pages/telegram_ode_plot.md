@@ -20,8 +20,6 @@ At this point you will see this:
 
 ![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/telegram_ode_plot/screen_1_mod.png)
 
-
-
 <br>
 
 ## how I am supposed to use it?
