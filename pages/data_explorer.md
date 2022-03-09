@@ -1,0 +1,52 @@
+# DataExplorer: a prototype
+Ok this is the story. I've once read about this very cool product by [einblick](https://einblick.ai/).
+
+It is a tool to dynamically explore stat and even fit simple model and it seems to be very useful during the development phase of a project.
+
+Namely when you are studying a new dataset you would like to be free to explore relation between al the variables and find patterns. A good way to do it is to approach visually at the data (*plot everything*) and later analytically (*feature selection, try to make some regression...*).
+
+
+I've tries to write a prototype (not even close to **einblick** product) that let me explore a pandas dataframe in a very fast and easy way.
+
+In **clark_py/dash/data_explorer.py** you will find **DashDataExplorer** class.
+Suppose you have a dataframe **df** you want to explore then you can run:
+    
+    from clark_py.dash.data_explorer import DashDataExplorer
+    import plotly.express as px
+    import panda as pd
+    
+    # build dataframe to explore
+    df = px.data.iris()
+    df['valuedate'] = pd.date_range(datetime(2021, 1, 1), datetime(2021, 1, 1) + timedelta(days=len(df)-1), freq='D')
+
+    dde = DashDataExplorer()
+    dde.run(df, debug=True)
+
+
+The result is a dashboard with modules in which you can build on the fly plot using data from **df** dataframe.
+
+
+In each module (in this prototype there are just 2 modules...in the future the modules will be dynamic) you can specify:
+* **plot type**
+* **width**
+* **height**
+
+**width** and **height** are parameters just to set plot dimension. Let's focus on the first parameter.
+You can choose between:
+
+* scatter
+* scatter matrix (*pairplot in seaborn*)
+* timeseries
+* 2timeseries
+
+Depending on what you choose a second set of parameter to be selected will appear.
+
+For example if you choose *scatter* you have then to choose:
+* x axis variable
+* y axis variable
+* hue variable (*optional*)
+* size variable (*optional*)
+* regression line switch (*optional*)
+
+ 
+
