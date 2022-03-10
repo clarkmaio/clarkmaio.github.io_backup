@@ -31,6 +31,8 @@ In each module (in this prototype there are just 2 modules...in the future the m
 * **width**
 * **height**
 
+![screen_1](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/tdata_explorer/screen_shot_1.PNG)
+
 **width** and **height** are parameters just to set plot dimension. Let's focus on the first parameter.
 You can choose between:
 
@@ -48,5 +50,13 @@ For example if you choose *scatter* you have then to choose:
 * size variable (*optional*)
 * regression line switch (*optional*)
 
- 
+ ![screen_2](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/tdata_explorer/screen_shot_2.PNG)
+
+
+
+Another example is **scatter_matrix** mode which is equivalent to *seaborn pairplot* and let you visualize multiple scatter plots at once to compare relations between variables.
+
+
+![screen_3](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/tdata_explorer/screen_shot_3.PNG)
+![screen_4](https://raw.githubusercontent.com/clarkmaio/clarkmaio.github.io/main/img/tdata_explorer/screen_shot_4.PNG)
 
