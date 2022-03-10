@@ -1,14 +1,14 @@
 # DataExplorer: a prototype
-Ok this is the story. I've once read about this very cool product by [einblick](https://einblick.ai/).
+Ok this is the story. I've once red about this very cool product by [einblick](https://einblick.ai/).
 
-It is a tool to dynamically explore stat and even fit simple model and it seems to be very useful during the development phase of a project.
+It is a tool to dynamically explore data and even fit simple models. It is very useful during the development phase of a project.
 
-Namely when you are studying a new dataset you would like to be free to explore relation between al the variables and find patterns. A good way to do it is to approach visually at the data (*plot everything*) and later analytically (*feature selection, try to make some regression...*).
+Namely when you are studying a new dataset you would like to be free to explore relations between all the variables and find patterns. A good way to do it is to visually approach data (*i.e. plot everything*) and later analytically (*i.e. feature selection, try to make some regression...*).
 
 
-I've tries to write a prototype (not even close to **einblick** product) that let me explore a pandas dataframe in a very fast and easy way.
+I've tried to write a prototype (not even close to **einblick** product) that let me explore a pandas dataframe in a very fast and easy way.
 
-In **clark_py/dash/data_explorer.py** you will find **DashDataExplorer** class.
+In **clark_py/dash/data_explorer.py** (*see [clark_py](https://github.com/clarkmaio/clark_py)*) you will find **DashDataExplorer** class.
 Suppose you have a dataframe **df** you want to explore then you can run:
     
     from clark_py.dash.data_explorer import DashDataExplorer
@@ -23,10 +23,10 @@ Suppose you have a dataframe **df** you want to explore then you can run:
     dde.run(df, debug=True)
 
 
-The result is a dashboard with modules in which you can build on the fly plot using data from **df** dataframe.
+The result is a dashboard with modules in which you can build on the fly plots using values of **df** dataframe.
 
 
-In each module (in this prototype there are just 2 modules...in the future the modules will be dynamic) you can specify:
+In each module (in this prototype there are just 2 modules...in the future the modules will be dynamically built) you can specify:
 * **plot type**
 * **width**
 * **height**
