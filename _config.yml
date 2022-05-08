@@ -3,3 +3,7 @@ title: clarkmaio's page
 descirption: that's it.
 logo: /img/logo.png
 show_downloads: false
+
+markdown: kramdown
+kramdown:
+    math_engine: katex
