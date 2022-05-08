@@ -28,7 +28,7 @@ we will decompose the final result into the contribution of numbers divisible by
 For example the sum of all numbers divisible by 3 smaller than 1000 is:
 
 ```math
-3 + 6 + 9 + 12 + 15 + 18 +...999 = 3 * \left(1 + 2 + 3 + 4 + 5 + ... + 333 \right)
+3 + 6 + 9 + 12 + 15 + 18 +...999 = 3 \cdot \left(1 + 2 + 3 + 4 + 5 + ... + 333 \right)
 ```
 
 The last value of the sum can be expressed in general as `floor(N/3)` (i.e. floor approximation of `N/3`).
@@ -36,7 +36,7 @@ The last value of the sum can be expressed in general as `floor(N/3)` (i.e. floo
 
 This observation is very useful since it let us compute the term very fast using an analytical formula:
 ```math
-3 * \left( \textit{floor}\left( \frac{N}{3} \right) * \left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right) /2 \right)
+3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) * \left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right) /2 \right)
 ```
 
 The output will be the sum of the two components:
