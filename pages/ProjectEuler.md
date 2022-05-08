@@ -34,7 +34,7 @@ For example the sum of all numbers divisible by 3 smaller than 1000 is:
 The last value of the sum can be expressed in general as `floor(N/3)` (i.e. floor approximation of `N/3`).
 
 
-This observation is very useful since it let us compute the term very fast using an analytical formula:
+This observation is very useful since it let us compute the term very fast using the formula:
 ```math
 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
 ```
@@ -42,7 +42,7 @@ This observation is very useful since it let us compute the term very fast using
 The output will be the sum of the two components:
 
 ```math
-output = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right) /2 \right) + 5 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
+output = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right) + 5 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
 ```
 
 !!! WAIT: to avoid double counting we have to subtract those terms that are divisible by 3 and 5 (i.e. by 15)
