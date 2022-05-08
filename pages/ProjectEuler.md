@@ -25,26 +25,33 @@ It works but it's slow.
 This is my idea:
 we will decompose the final result into the contribution of numbers divisible by 3 and 5.
 
-For example: the sum of all numbers divisible by 3 smaller than 1000 is:
+For example the sum of all numbers divisible by 3 smaller than 1000 is:
 
-`3 + 6 + 9 + 12 + 15 + 18 +...999 = 3 * (1 + 2 + 3 + 4 + 5 + ... + 333)`
+```math
+3 + 6 + 9 + 12 + 15 + 18 +...999 = 3 * (1 + 2 + 3 + 4 + 5 + ... + 333)
+```
 
 The last value of the sum can be expressed in general as `floor(N/3)` (i.e. floor approximation of `N/3`).
 
 
 This observation is very useful since it let us compute the term very fast using an analytical formula:
-`3 * ( floor(N/3) * (floor(N/3) + 1) /2 )`
+```math
+3 * ( floor(N/3) * (floor(N/3) + 1) /2 )
+```
 
 The output will be the sum of the two components:
 
-`output = 3 * ( floor(N/3) * (floor(N/3) + 1) /2 ) + 5 * ( floor(N/3) * (floor(N/5) + 1) /2 )`
+```math
+output = 3 * ( floor(\frac{N}{3}) * (floor(\frac{N}{3}) + 1) /2 ) + 5 * ( floor(\frac{N}{3}) * (floor(\frac{N}{5}) + 1) /2 )
+```
 
 !!! WAIT: to avoid double counting we have to subtract those terms that are divisible by 3 and 5 (i.e. by 15)
 
-`FINAL OUTPUT = 3 * ( floor(N/3) * (floor(N/3) + 1) /2 ) +
+```math
+FINAL OUTPUT = 3 * ( floor(N/3) * (floor(N/3) + 1) /2 ) +
                5 * ( floor(N/5) * (floor(N/5) + 1) /2 ) -
-               15 * ( floor(N/15) * (floor(N/15) + 1) /2 )`
-
+               15 * ( floor(N/15) * (floor(N/15) + 1) /2 )
+```
             
 ##### Solution:
 The final solution is:
