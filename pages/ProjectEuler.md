@@ -42,13 +42,13 @@ This observation is very useful since it let us compute the term very fast using
 The output will be the sum of the two components:
 
 ```math
-output = 3 \cdot \left( floor(\frac{N}{3}) * (floor(\frac{N}{3}) + 1) /2 ) + 5 * ( floor(\frac{N}{3}) * (floor(\frac{N}{5}) + 1) /2 \right)
+output = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right) /2 \right) + 5 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
 ```
 
 !!! WAIT: to avoid double counting we have to subtract those terms that are divisible by 3 and 5 (i.e. by 15)
 
 ```math
-FINAL OUTPUT = 3 \cdot \left( \textit{floor}\left( \textit{floor}\left( \frac{N}{3} \right) \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right) +
+FINAL OUTPUT = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right) +
                5 \cdot \left( \textit{floor}\left( \frac{N}{5} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{5} \right) + 1 \right)}{2} \right) -
                15 \cdot \left( \textit{floor}\left( \frac{N}{15} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{15} \right) + 1 \right)}{2} \right)
 ```
