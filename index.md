@@ -12,5 +12,5 @@ $$x_i = 0$$
 Test latex 2:
 
 \\(
-Sum_i x_i = y
+sum_i x_i = y
 \\)
