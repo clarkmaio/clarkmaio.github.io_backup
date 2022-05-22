@@ -6,4 +6,4 @@ have fun
 
 Test latex:
 
-$$sum x_i = 0$$
+$$\Sum_{i \in I} x_i = 0$$
