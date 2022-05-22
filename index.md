@@ -6,11 +6,4 @@ have fun
 
 Test latex:
 
-$$x_i = 0$$
-
-
-Test latex 2:
-
-\\(
-sum_i x_i = y
-\\)
+$$sum x_i = 0$$
