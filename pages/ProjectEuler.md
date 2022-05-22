@@ -27,31 +27,32 @@ we will decompose the final result into the contribution of numbers divisible by
 
 For example the sum of all numbers divisible by 3 smaller than 1000 is:
 
-```math
+$$
 3 + 6 + 9 + 12 + 15 + 18 +...999 = 3 \cdot \left(1 + 2 + 3 + 4 + 5 + ... + 333 \right)
-```
+$$
 
 The last value of the sum can be expressed in general as `floor(N/3)` (i.e. floor approximation of `N/3`).
 
 
 This observation is very useful since it let us compute the term very fast using the formula:
-```math
+
+$$
 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
-```
+$$
 
 The output will be the sum of the two components:
 
-```math
+$$
 output = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right) + 5 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right)
-```
+$$
 
 !!! WAIT: to avoid double counting we have to subtract those terms that are divisible by 3 and 5 (i.e. by 15)
 
-```math
+$$
 FINAL OUTPUT = 3 \cdot \left( \textit{floor}\left( \frac{N}{3} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{3} \right) + 1 \right)}{2} \right) +
                5 \cdot \left( \textit{floor}\left( \frac{N}{5} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{5} \right) + 1 \right)}{2} \right) -
                15 \cdot \left( \textit{floor}\left( \frac{N}{15} \right) \cdot \frac{\left( \textit{floor}\left( \frac{N}{15} \right) + 1 \right)}{2} \right)
-```
+$$
             
 ##### Solution:
 The final solution is:
